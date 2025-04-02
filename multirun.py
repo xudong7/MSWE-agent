@@ -538,7 +538,8 @@ def run_single(scripts, instance):
 
 def main(args: ScriptArguments):
     from sweagent.environment.utils import get_instances
-    executer = ThreadPoolExecutor(30)
+    running_threads = int(os.environ.get('RUNNING_THREADS', '30'))
+    executer = ThreadPoolExecutor(running_threads)
     cli_args = args.environment.cli_args
 
     all_datas = get_instances(

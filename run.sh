@@ -1,10 +1,10 @@
 python3 multirun.py \
-   --model_name aws:claude-35-sonnet \
+   --model_name gpt4o \
    --cache_task_images True \
    --per_instance_api_calls_limit 50 \
    --pre_build_all_images True \
    --remove_image False \
-   --pr_file data/go_verified.jsonl \
+   --pr_file data/go.jsonl \
    --config_file config/default.yaml  --skip_existing=True \
    --per_instance_cost_limit 5.00 \
    --print_config=False \
