@@ -1,6 +1,7 @@
 # Make sure git-lfs is installed (https://git-lfs.com)
 git lfs install
-git clone https://huggingface.co/datasets/bytedance-research/Multi-SWE-Bench data/
+# git clone https://huggingface.co/datasets/bytedance-research/Multi-SWE-Bench data/
+git clone https://hf-mirror.com/datasets/bytedance-research/Multi-SWE-Bench data/
 
 # merge all repos of one language into one jsonl
 LANGS=(
